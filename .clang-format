@@ -1,0 +1,76 @@
+# Base style rules
+BasedOnStyle: Google
+ColumnLimit: 80
+IndentWidth: 2
+ContinuationIndentWidth: 4
+UseTab: Never
+
+# Function parameters & arguments layout
+AlignAfterOpenBracket: BlockIndent                  
+BinPackParameters: false                            
+BinPackArguments: false                             
+AllowAllParametersOfDeclarationOnNextLine: false   
+AllowAllArgumentsOnNextLine: false                  
+
+# Break return type on definitions, keep on declarations
+AlwaysBreakAfterReturnType: AllDefinitions          
+BreakAfterReturnType: AllDefinitions                
+PenaltyReturnTypeOnItsOwnLine: 1
+SpaceBeforeParens: Always                           
+IndentWrappedFunctionNames: false
+
+# Brace placement rules
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel: true                              
+  AfterControlStatement: Always                     
+  AfterEnum: true                                   
+  AfterFunction: true                               
+  AfterStruct: true                                 
+  BeforeElse: true                                  
+  BeforeWhile: true                                 
+  SplitEmptyFunction: false                         
+  SplitEmptyRecord: false                           
+  SplitEmptyNamespace: false                        
+
+# Inline short code blocks
+AllowShortFunctionsOnASingleLine: None              
+AllowShortBlocksOnASingleLine: Never 
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse 
+AllowShortLoopsOnASingleLine: true                 
+AllowShortCaseLabelsOnASingleLine: true             
+AllowShortEnumsOnASingleLine: true                  
+
+# Auto-insert braces for control statements
+InsertBraces: true                                  
+
+# Preprocessor directives indentation
+IndentPPDirectives: AfterHash                       
+PPIndentWidth: 2                                    
+
+# Whitespace cleanup
+MaxEmptyLinesToKeep: 1                              
+KeepEmptyLinesAtTheStartOfBlocks: false            
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpacesInCStyleCastParentheses: false
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true                
+SpacesBeforeTrailingComments: 1                    
+DerivePointerAlignment: false                       
+PointerAlignment: Right                             
+Cpp11BracedListStyle: true                          
+
+# Consecutive block alignment
+AlignConsecutiveMacros: Consecutive                
+AlignConsecutiveAssignments: Consecutive           
+AlignConsecutiveDeclarations: Consecutive          
+AlignConsecutiveBitFields: Consecutive             
+AlignTrailingComments: true                         
+AlignEscapedNewlines: Left                          
+AlignOperands: Align                                
+
+# Line wraps inside expressions
+BreakBeforeBinaryOperators: NonAssignment           
+BreakStringLiterals: true                           
+ReflowComments: true                                
