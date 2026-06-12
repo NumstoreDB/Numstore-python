@@ -1,0 +1,3 @@
+[submodule "thirdparty/numstore"]
+	path = thirdparty/numstore
+	url = git@github.com:NumstoreDB/Numstore

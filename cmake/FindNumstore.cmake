@@ -22,9 +22,10 @@ set(ENABLE_STRIP    ON  CACHE BOOL "Strip symbols in Numstore library"        FO
 set(ENABLE_ASAN     OFF CACHE BOOL "Build Numstore with address sanitizer"    FORCE)
 
 # Internal — not user-facing
-set(ENABLE_NTEST  ON)
+set(ENABLE_NTEST  ON )
 set(BUILD_TOOLS   OFF)
 set(BUILD_SAMPLES OFF)
+set(BUILD_APP     OFF)
 
 set(_numstore_source_dir ${CMAKE_SOURCE_DIR}/thirdparty/numstore)
 

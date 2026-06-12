@@ -1,5 +1,5 @@
 [build-system]
-requires = ["scikit-build-core>=0.8.0", "numpy"]
+requires = ["scikit-build-core>=0.8.0", "numpy>=2.0"]
 build-backend = "scikit_build_core.build"
 
 [project]
@@ -9,7 +9,7 @@ description = "Python interface for the numerical database"
 readme = "README.md"
 license = {file = "LICENSE.md"}
 requires-python = ">=3.8"
-dependencies = ["numpy"]
+dependencies = ["numpy>=2.0"]
 authors = [
   {name = "Theo Lincke", email = "lincketheo.dev@gmail.com"}
 ]

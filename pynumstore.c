@@ -12,8 +12,6 @@
 /// See the License for the specific language governing permissions and
 /// limitations under the License.
 
-#pragma once
-
 // Python
 #define PY_SSIZE_T_CLEAN
 #include <Python.h>
@@ -31,6 +29,7 @@
 #include "numstore.h"
 #include "testing/testing.h"
 #include "types.h"
+#include "variables.h"
 
 /******************************************************************************
  * SECTION: Forward Declaration

@@ -28,6 +28,9 @@ jobs:
           submodules: recursive
           persist-credentials: false
 
+      - name: Update submodules
+        run: git submodule update --init --recursive
+
         ########################################################
         ######## CI Build Wheel Step
       - name: Build wheels
