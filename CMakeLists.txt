@@ -14,6 +14,13 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
+if(MSVC)
+    target_compile_options(numstore PUBLIC
+        /std:c11
+        /experimental:c11atomics
+    )
+endif()
+
 ############################## Set up dependencies
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 find_package(Python COMPONENTS Interpreter Development.Module REQUIRED)
