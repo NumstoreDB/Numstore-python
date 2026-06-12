@@ -15,7 +15,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 if(MSVC)
-    target_compile_options(numstore PUBLIC
+    add_compile_options(
         /std:c11
         /experimental:c11atomics
     )
